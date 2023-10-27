@@ -1,0 +1,7 @@
+type Query {
+  image(width: String, height: String, options: String): ImageRespose
+}
+
+type ImageRespose @key(fields: "url") {
+  url: String
+}

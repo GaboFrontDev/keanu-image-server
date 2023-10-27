@@ -1,0 +1,11 @@
+version: "3.0"
+
+services:
+  apollo:
+    build: .
+    container_name: apollo
+    ports:
+      - "4001:4001"
+    volumes:
+      - "./src:/usr/app/src"
+      - "./public:/usr/app/public"
